@@ -5,9 +5,8 @@ function getInputValue() {
   
     // assigned varables  for response
     let first = "Nice to meet you, ";
-    let last = "!!";
   
       // Displaying the value with green font
-    document.write(first += inputVal.fontcolor("green") += last);
+    document.write(first += inputVal.fontcolor("green"));
   
   }
