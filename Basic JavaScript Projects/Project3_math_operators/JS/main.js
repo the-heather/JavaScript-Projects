@@ -5,17 +5,17 @@
 
 function sub() {
     var subtraction = 534 - 265;
-    document.getElementById("Math2").interHTML = subtraction;
+    document.getElementById("Math2").innerHTML = subtraction;
 }
 
 function mult() {
     var multiplication = 485 * 593;
-    document.getElementById("Math3").interHTML =  multiplication;
+    document.getElementById("Math3").innerHTML =  multiplication;
 }
 
 function div() {
     var division = 580 / 5;
-    document.getElementById("Math4").interHTML =  division;
+    document.getElementById("Math4").innerHTML =  division;
 }
 
 function more_math() {
@@ -30,11 +30,22 @@ function modulus() {
 
 function negation() {
     var x = 10;
-    document.getElementById("math7").innerHTML = -x;
+    document.getElementById("Math7").innerHTML = -x;
 }}
 
-var X = 5.25;
-X--;
-document.write(X);
+function increment() {
+    var value = parseInt(document.getElementById('Math8').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('Math8').value = value;
+}
 
-window.alert(Math.random());
+function decrement() {
+    var value = parseInt(document.getElementById('Math9').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value--;
+    document.getElementById('Math9').value = value;
+}
+function random() {
+    document.getElementById('Math10').innerHTML = (Math.random()*10)+1;
+}
