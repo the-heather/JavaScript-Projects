@@ -1,3 +1,14 @@
+// while i is less than 10 print the sentence and add 1
+function looping() {
+    let text = "";
+    let i = 0;
+    while (i < 10) {
+    text += "The number is " + i;
+    i++;
+  }
+  document.getElementById("loops").innerHTML = text.;
+}
+
 // returns the length of the variable text
 function get_length() {
     let text = "Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time!";
