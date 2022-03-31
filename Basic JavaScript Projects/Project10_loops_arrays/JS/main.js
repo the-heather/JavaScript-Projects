@@ -6,7 +6,7 @@ function looping() {
     text += "The number is " + i;
     i++;
   }
-  document.getElementById("loops").innerHTML = text.;
+  document.getElementById("loops").innerHTML = text;
 }
 
 // returns the length of the variable text
